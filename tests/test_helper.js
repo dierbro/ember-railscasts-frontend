@@ -4,6 +4,7 @@ Ember.testing = true;
 
 window.startApp          = require('appkit/tests/helpers/start_app');
 window.isolatedContainer = require('appkit/tests/helpers/isolated_container');
+require('appkit/tests/helpers/httpRespond');
 
 function exists(selector) {
   return !!find(selector).length;
