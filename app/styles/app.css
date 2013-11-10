@@ -7,7 +7,8 @@ html, body {
   margin-bottom: 30px;
 }
 
-.text-muted{
+.text-muted,
+.badge-comment{
   cursor: pointer;
 }
 

@@ -4,10 +4,12 @@
       <ul class="list-group">
         {{#each episode in controller}}
         <li class="list-group-item">
-          <span class="badge">{{episode.comments}} comment </span>
+          {{#link-to 'comments' episode tagName="span" classNames="badge badge-comment"}}
+            {{episode.comments}} comments
+          {{/link-to}}
           <p>
             {{#link-to 'episode' episode classNames="btn btn-success btn-xs btn-play"}}
-              Watch
+              Read
             {{/link-to}}
 
             #{{episode.position}} 

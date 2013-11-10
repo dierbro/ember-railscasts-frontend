@@ -5,7 +5,9 @@
   <div class="media-body">
     <h4 class="media-heading">
       {{name}}
-      <span class="badge pull-right">{{comments}} comments</span>
+      {{#link-to 'comments' this tagName="span" classNames="badge badge-comment pull-right"}}
+        {{comments}} comments
+      {{/link-to}}
     </h4>
     <h5>Episode {{position}} - {{pretty-date published_at}}</h5>
     <p>{{description}}</p>
