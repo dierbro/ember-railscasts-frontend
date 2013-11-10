@@ -15,7 +15,9 @@
         <li><button {{action 'connect_with_github'}} class="btn bnt-success btn-auth">Connect With GitHub</button></li>
       {{/if}}
     </ul>
-    <h1 class="text-muted">ScreenCasts</h1>
+    {{#link-to 'index' tagName="h1" classNames="text-muted"}}
+      ScreenCasts
+    {{/link-to}}
   </div>
   <hr/> 
   {{outlet}}

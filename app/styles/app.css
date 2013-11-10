@@ -6,3 +6,7 @@ html, body {
 .media-episode{
   margin-bottom: 30px;
 }
+
+.text-muted{
+  cursor: pointer;
+}
