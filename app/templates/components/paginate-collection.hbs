@@ -1,0 +1,8 @@
+<li {{bind-attr class="hasPrev::disabled"}}><a {{action 'prev'}}>&laquo;</a></li>
+{{#each page in pages}}
+  <li {{bind-attr class="page.isCurrent:active"}}>
+    <a href="#" {{action 'goToPage' page.number }}>{{page.number}}</a>
+  </li>
+{{/each}}
+<li  {{bind-attr class="hasNext::disabled"}}><a {{action 'next'}}>&raquo;</a></li>
+

@@ -1,3 +1,22 @@
-<h2 id='title'>Welcome to Ember.js</h2>
-
-{{outlet}}
+<div class="container">
+  <div class="masthead">
+    <ul class="nav nav-pills pull-right">
+        <li>
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Search">
+              </div>
+            </form>
+        </li>
+      {{#if isAuthenticated}}
+        <li><span class="welcome-user">Welcome {{currentUser.email}}</span></li>
+        <li><button {{action 'logout'}} class="btn btn-danger btn-logout">Logout</button></li>
+      {{else}}
+        <li><button {{action 'connect_with_github'}} class="btn bnt-success btn-auth">Connect With GitHub</button></li>
+      {{/if}}
+    </ul>
+    <h1 class="text-muted">ScreenCasts</h1>
+  </div>
+  <hr/> 
+  {{outlet}}
+</div>

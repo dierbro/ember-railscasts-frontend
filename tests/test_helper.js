@@ -1,7 +1,7 @@
 document.write('<div id="ember-testing-container"><div id="ember-testing"></div></div>');
 
 Ember.testing = true;
-
+window.RESTAdapterHost   = "http://railscasts-backend.dierbro.com/"
 window.startApp          = require('appkit/tests/helpers/start_app');
 window.isolatedContainer = require('appkit/tests/helpers/isolated_container');
 require('appkit/tests/helpers/httpRespond');

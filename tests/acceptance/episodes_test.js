@@ -1,6 +1,6 @@
 var App;
 
-module('Acceptances - Index', {
+module('Acceptances - EpisodesIndex', {
   setup: function(){
     fakehr.start();
     App = startApp();
@@ -11,13 +11,14 @@ module('Acceptances - Index', {
   }
 });
 
-test('index redirects to episodes', function(){
+test('episodes index redirects to episodes/page/1', function(){
   expect(1);
 
-  visit('/')
+  visit('/episodes')
   .httpRespond("get", RESTAdapterHost+"episodes?page=1", {episodes: []})
   .then(function(){
     var episodes = find('.episodes');
-    ok(exists(episodes), "has episode container");
+    ok(exists(episodes), "has episodes container");
   });
 });
+

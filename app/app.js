@@ -18,5 +18,8 @@ Ember.RSVP.configure('onerror', function(error) {
     Ember.Logger.error(error.stack);
   }
 });
+Ember.Handlebars.helper('pretty-date', function(date){
+  return moment(date).format('D MMMM YYYY');
+});
 
 export default App;

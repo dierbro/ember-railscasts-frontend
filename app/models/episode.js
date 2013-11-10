@@ -6,7 +6,7 @@ var Episode = DS.Model.extend({
   seconds: DS.attr("number"),
   permalink: DS.attr("string"),
   comments: DS.attr("number"),
-  tags: DS.attr("array"),
+  //tags: DS.attr("array"),
   slug: function(){
     return this.get("position")+"-"+this.get("permalink");
   }.property("permalink", "position")

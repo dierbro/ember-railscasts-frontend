@@ -1,0 +1,15 @@
+<div class="well">
+<strong>View: </strong>
+<div class="btn-group btn-group-view-type">
+<button {{action 'switchView' 'media-view' }} type="button" {{ bind-attr class=":btn :btn-default :btn-media-view isMediaView:active"}}>
+Media
+</button>
+<button {{action 'switchView' 'list-view' }} type="button" {{ bind-attr class=":btn :btn-default :btn-list-view isListView:active"}}>
+List
+</button>
+<button {{action 'switchView' 'grid-view' }} type="button" {{ bind-attr class=":btn :btn-default :btn-grid-view isGridView:active"}}>
+Grid
+</button>
+</div>
+</div>
+

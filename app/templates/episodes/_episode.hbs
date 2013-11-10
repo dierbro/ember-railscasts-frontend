@@ -1,0 +1,15 @@
+<div class="media media-episode">
+  {{#link-to 'episode' episode classNames="pull-left"}}
+    <img class="media-object" src="assets/placeholder-episode.png">
+  {{/link-to}}
+  <div class="media-body">
+    <h4 class="media-heading">
+      {{name}}
+      <span class="badge pull-right">{{comments}} comments</span>
+    </h4>
+    <h5>Episode {{position}} - {{pretty-date published_at}}</h5>
+    <p>{{description}}</p>
+    <p>{{#link-to 'episode' episode classNames="btn btn-success btn-play pull-right"}}Watch{{/link-to}}</p>
+  </div>
+</div>
+
