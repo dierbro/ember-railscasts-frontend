@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-md-9">
+    <div class="episodes">
+      <ul class="list-group">
+        {{#each episode in controller}}
+        <li class="list-group-item">
+          <span class="badge">{{episode.comments}} comment </span>
+          <p>
+            {{#link-to 'episode' episode classNames="btn btn-success btn-xs btn-play"}}
+              Watch
+            {{/link-to}}
+
+            #{{episode.position}} 
+            <strong>{{episode.name}}</strong> 
+            - {{pretty-date episode.published_at}}
+          </p>
+        </li>
+        {{/each}}
+      </ul>
+
+            {{endless-scroll }}
+        </div>
+    </div>
+    <div class="col-md-3">
+        {{ partial 'episodes/sidebar' }}
+    </div>
+</div>
+

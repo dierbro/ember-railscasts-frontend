@@ -1,0 +1,11 @@
+ <div style="text-align: center;">
+  {{#if targetObject.isLoadingMore}}
+    <strong>Loading more items ... </strong>
+  {{else}}
+    {{#if targetObject.noMoreItems}}
+      <div class="alert alert-danger alert-no-more-items">No More Items!!!!</div>
+    {{else}}
+      <button {{action 'more' }}class="btn btn-success btn-more">Click More Items</button>
+    {{/if}}
+  {{/if}}
+ </div>

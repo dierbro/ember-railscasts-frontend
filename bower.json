@@ -11,7 +11,8 @@
     "FakeXMLHttpRequest": "https://github.com/trek/FakeXMLHttpRequest.git",
     "bootstrap": "~3.0.0",
     "moment": "",
-    "video.js": ""
+    "video.js": "",
+    "jquery.inview": "https://github.com/protonet/jquery.inview.git"
   },
   "resolutions": {
     "ember": "~>1.2.0-beta.1"
