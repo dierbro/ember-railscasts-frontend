@@ -8,7 +8,9 @@
     "ember-data-shim": "1.0.0-beta.3",
     "ember-resolver": "git://github.com/stefanpenner/ember-jj-abrams-resolver.git#master",
     "fakehr": "git://github.com/trek/fakehr.git#master",
-    "FakeXMLHttpRequest": "https://github.com/trek/FakeXMLHttpRequest.git"
+    "FakeXMLHttpRequest": "https://github.com/trek/FakeXMLHttpRequest.git",
+    "bootstrap": "~3.0.0",
+    "moment": ""
   },
   "resolutions": {
     "ember": "~>1.2.0-beta.1"
