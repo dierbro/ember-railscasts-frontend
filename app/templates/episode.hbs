@@ -1,0 +1,52 @@
+<div class="episode">
+  {{#if playing}}
+    {{ episode-video }}
+  {{/if}}
+<div class="media">
+  <a class="pull-left" href="#">
+    <img class="media-object" src="assets/placeholder-episode.png">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading">
+        {{name}}
+    </h4>
+    <h5>Episode {{position}} - {{pretty-date published_at}}</h5>
+    <p>{{description}}</p>
+    <p>
+      <button class="btn btn-success btn-play pull-left" {{action 'play'}}>Play</button>
+      <div class="pull-right">
+      <strong>Download:</strong>
+      <div class="btn-group"> 
+        <button type="button" class="btn btn-default" {{ action 'download'}}>mp4</button>
+        <button type="button" class="btn btn-default" {{ action 'download'}}>webm</button>
+        <button type="button" class="btn btn-default" {{ action 'download'}}>ogv</button>
+      </div>
+      </div>
+    </p>
+  </div>
+</div>
+<br>
+<ul class="nav nav-tabs">
+  {{#link-to 'episode.notes' tagName="li"}}
+    <a {{bindAttr href="view.href"}}>Notes</a>
+  {{/link-to}}
+  {{#link-to 'episode.transcription' tagName="li"}}
+    <a {{bindAttr href="view.href"}}>Transcription</a>
+  {{/link-to}}
+  {{#link-to 'comments' tagName="li"}}
+    <a {{bindAttr href="view.href"}} class="btn-comments">Comments</a>
+  {{/link-to}}
+  {{#link-to 'episode.similar_episodes' tagName="li"}}
+    <a {{bindAttr href="view.href"}}>Similar Episode</a>
+  {{/link-to}}
+  <div class="btn-group pull-right"> 
+    {{#if previous }}
+      <button class="btn btn-default" {{action 'goToEpisode' previous}} >Previous</button>
+    {{/if}}
+    {{#if next }}
+      <button class="btn btn-default" {{action 'goToEpisode' next}}>Next</button>
+    {{/if}}
+  </div>
+</ul>
+{{ outlet }}
+</div>
