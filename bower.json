@@ -10,7 +10,8 @@
     "fakehr": "git://github.com/trek/fakehr.git#master",
     "FakeXMLHttpRequest": "https://github.com/trek/FakeXMLHttpRequest.git",
     "bootstrap": "~3.0.0",
-    "moment": ""
+    "moment": "",
+    "video.js": ""
   },
   "resolutions": {
     "ember": "~>1.2.0-beta.1"
