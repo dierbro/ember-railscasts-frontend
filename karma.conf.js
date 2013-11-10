@@ -6,6 +6,8 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      'vendor/FakeXMLHttpRequest/fake_xml_http_request.js',
+      'vendor/fakehr/fakehr.js',
       'vendor/almond.js',
       'vendor/ember-resolver/dist/ember-resolver.js',
       'vendor/jquery/jquery.js',
@@ -25,8 +27,8 @@ module.exports = function(config) {
       'karma-qunit',
       'karma-coverage',
       'karma-phantomjs-launcher',
-      'karma-chrome-launcher',
-      'karma-firefox-launcher',
+      //'karma-chrome-launcher',
+      //'karma-firefox-launcher',
       //'karma-safari-launcher'  // npm install karma-safari-launcher
     ],
 
@@ -70,7 +72,7 @@ module.exports = function(config) {
     // - Safari (only Mac)
     // - PhantomJS
     // - IE (only Windows)
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
 
     // If browser does not capture in given timeout [ms], kill it
     captureTimeout: 60000,
