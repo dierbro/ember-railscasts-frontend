@@ -20,4 +20,7 @@ html, body {
   padding: 5px;
   min-height: 60px;
   margin-bottom: 0px;
-};
+}
+.navbar-form{
+  margin-top: 0px;
+}
