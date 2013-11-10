@@ -4,6 +4,7 @@ Router.map(function() {
   this.resource('episodes', function() {
     this.route('page', {path: 'page/:page'});
     this.resource('episode', {path: '/:slug'}, function(){
+      this.route('watch' );
       this.route('notes' );
       this.route('transcription' );
       this.resource('comments' );
