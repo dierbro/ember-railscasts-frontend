@@ -12,7 +12,8 @@
     "bootstrap": "~3.0.0",
     "moment": "",
     "video.js": "",
-    "jquery.inview": "https://github.com/protonet/jquery.inview.git"
+    "jquery.inview": "https://github.com/protonet/jquery.inview.git",
+    "jquery.cookie": ""
   },
   "resolutions": {
     "ember": "~>1.2.0-beta.1"
