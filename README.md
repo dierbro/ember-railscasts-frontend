@@ -1,4 +1,4 @@
-###[Demo](http://dierbro.github.io/ember-railscats-frontend)
+###[Demo](http://dierbro.github.io/ember-railscasts-frontend)
 
 
 TODO:
