@@ -3,6 +3,5 @@
 
 TODO:
 
-- [ ] Authentication with oauth providers
 - [ ] Search
 - [ ] Style
